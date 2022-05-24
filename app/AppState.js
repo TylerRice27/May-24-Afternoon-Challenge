@@ -8,8 +8,8 @@ class AppState extends EventEmitter {
 
   snacks = [
 
-    new Snack('Root Beer', 2.00),
-    new Snack('Mountain Dew', 7.00)
+    new Snack('Root Beer', 2.00, "https://images.unsplash.com/photo-1567099058592-19a2a2bf5fc8?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"),
+    new Snack('Mountain Dew', 7.00, 'https://images.unsplash.com/photo-1632161927166-0aea13d8f7e6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1898')
 
   ]
 }
