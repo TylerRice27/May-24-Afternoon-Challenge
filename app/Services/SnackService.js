@@ -14,13 +14,17 @@ class SnackService {
     }
 
     buySnacks(id) {
-        //I will be passing id here and I also need use the find function to find the item ID that I want to buy.
-        debugger
-        const buySnacks = ProxyState.snacks.find(s => s.id == id)
+        // I will be passing id here and I also need use the find function to find the item ID that I want to buy.
+        // debugger
+        const buyOneSnacks = ProxyState.snacks.find(s => s.id == id)
         console.log(id, "SnackService buy the right item");
 
-        if (money >= buySnacks.price) {
+        let money = ProxyState.money
+
+        if (money >= buyOneSnacks) {
+            money - buyOneSnacks.price
             console.log("you can buy ");
+
         }
     }
 
