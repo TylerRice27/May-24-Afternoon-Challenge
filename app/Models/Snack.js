@@ -17,7 +17,7 @@ export class Snack {
         return `
         <div class="col-md-4">
           <img class="drinks m-3" src="${this.img}" alt="Mountain Dew Pic">
-          <button type="button" onclick="" class="btn btn-success">$${this.price} Buy ${this.name}</button>
+          <button type="button" onclick="app.snackController.buySnacks('${this.id}')" class="btn btn-success">$${this.price} Buy ${this.name}</button>
 
         </div>
         

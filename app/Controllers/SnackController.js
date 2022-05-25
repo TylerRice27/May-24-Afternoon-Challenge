@@ -19,12 +19,22 @@ function _drawMoney() {
 export class SnackController {
 
     constructor() {
-
+        //This didn't work
+        // ProxyState.on('buySnacks', buySnacks)
         ProxyState.on('money', _drawMoney)
         console.log("Hey This Is Your Controller");
+
+
+
+
+
         _drawSnacks()
     }
 
+    buySnacks() {
+        snackService.buySnacks()
+
+    }
 
     addMoney() {
 

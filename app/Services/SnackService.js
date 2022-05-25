@@ -1,5 +1,6 @@
 import { ProxyState } from "../AppState.js";
 import { SnackController } from "../Controllers/SnackController.js";
+import { Snack } from "../Models/Snack.js";
 
 
 
@@ -12,9 +13,15 @@ class SnackService {
 
     }
 
-    buyDrink() {
+    buySnacks(id) {
+        //I will be passing id here and I also need use the find function to find the item ID that I want to buy.
+        debugger
+        const buySnacks = ProxyState.snacks.find(s => s.id == id)
+        console.log(id, "SnackService buy the right item");
 
-
+        if (money >= buySnacks.price) {
+            console.log("you can buy ");
+        }
     }
 
 

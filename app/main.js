@@ -3,8 +3,8 @@ import { ValuesController } from "./Controllers/ValuesController.js";
 
 class App {
   // valuesController = new ValuesController();
-
-  SnackController = new SnackController;
+  //Dont capitalize the instance on this the one to the left of the equal sign
+  snackController = new SnackController;
 
 }
 
